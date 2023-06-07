@@ -1,0 +1,18 @@
+#配置服务的名，以下两种配置方式相同
+dubbo:
+  application:
+    name: user-service
+    #关闭qos
+    qos-enable: false
+  #配置注册中心的地址，指定注册中心的类型和地址信息
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  #配置服务提供者远程通信的协议和端口
+  protocol:
+    name: dubbo
+    port: 20881
+
+#项目启动端口
+server:
+  port: 8002
+
